@@ -1,0 +1,29 @@
+.blue {
+    color: aqua;
+}
+
+#purple {
+    color: blueviolet;
+}
+
+body article h2 {
+    color: orange;
+}
+
+button + button {
+    margin-left: 32px;
+}
+
+ul li:nth-child(odd) {
+    color: gray;
+    background-color:lightcyan;
+}
+
+input:focus {
+    border-color: aqua;
+    outline: none;
+}
+
+.cleanlink {
+    text-decoration: none;
+}

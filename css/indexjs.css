@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    margin: 0;  
+    display: flex;
+    align-items: center;
+    background-color: #121214;
+}
+
+.container {
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #E1E1E6;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #E1E1E6;
+}
+
+a {
+    text-decoration: none;
+    color: #E1E1E6;
+}
+
+a:hover {
+    color:rgb(255, 174, 61);
+    transition: 1s;
+}
+
+.fontWhite {
+    color: #E1E1E6;
+}

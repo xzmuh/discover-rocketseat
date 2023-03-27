@@ -1,0 +1,41 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(41, 41, 41, 0.652);
+}
+
+header {
+    padding: 4rem;
+}
+
+nav {
+    background-color: #dbe1e8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+    align-items: center;
+}
+
+ul li:last-child {
+    background: rgb(27, 0, 86);
+    color: #dbe1e8;
+    border-radius: 3px;
+    padding: .8rem;
+}

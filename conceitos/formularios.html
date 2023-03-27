@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- GET = http://page.com.br/?name=john&email=john@ajs.com 
+        POST = Esconder dados
+
+        Button: disable | name | form | value 
+    -->
+    <div class="box">
+        <form class="center" action="" method="">
+            <fieldset>
+                <legend>Textarea</legend>
+                <textarea cols="20" rows="4" readonly>Faus is not sorvis... (soviético)</textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Select</legend>
+                    <label for="acontecimentos">Alguns acontecimentos</label>
+                    <select class="bonito" name="acontecimentos" id="acontecimentos">
+                        <option value="">Selecione</option>
+                        <option value="messi">Messi passa o rodo em criança</option>
+                        <option value="shuma">Shumacher vira primo do Bráz</option>
+                        <option value="apple">Apple larga tudo e passa vender cenouras</option>
+                        <option value="ovelhas">Ovelhas aprendem a enganar CR7</option>
+                        <option value="cloe">Cloe não é mais chamada de Rusvascas</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>Number</legend>
+                <input type="number" class="bonito" min="0" max="100" placeholder="Coloque números...">
+            </fieldset>
+            <fieldset>
+                <legend>Range</legend>
+                <input type="range" class="bonito" min="0" max="100" value="20" step="0.1">
+            </fieldset>
+            <fieldset>
+                <legend>Data</legend>
+                <input type="date">
+            </fieldset>
+        </form>
+    </div>
+    <div class="box">
+        <form class="center" action="" method="">
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="nome">Nome</label>
+                <input class="bonito" id="nome" type="text">
+                <button class="button" type="submit">Enviar</button>
+            </fieldset>
+            <fieldset>
+                <legend>Button</legend>
+                <input class="bonito" type="text" value="" placeholder="Digite...">
+                <button class="button" type="reset">Limpar</button>
+            </fieldset>
+            <fieldset>
+                <legend>Datalist</legend>
+                <input class="bonito" type="text" placeholder="Nada ve..." list="ndve">
+                <datalist id="ndve">
+                    <option>Ganhar R$600</option>
+                    <option>Quebrar um vidro</option>
+                    <option>Astronauta</option>
+                    <option>Lamber cimento</option>
+                    <option>Mortal e errar a piscina</option>
+                    <option>Chute ao frango</option>
+                    <option>Furar bola de criança</option>
+                    <option>Cigana fumante</option>
+                </datalist>
+                <button class="button" type="reset">Limpar</button>
+                <button class="button" type="submit">Enviar</button>
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <datalist id="emailslist">
+                    <option>xza@gmail.com.br</option>
+                    <option>sakd_pow@hotmail.com.br</option>
+                    <option>wisaz8@tollmail.com.br</option>
+                </datalist>
+                <input class="bonito" type="email" placeholder="Email" minlength="8" list="emailslist">
+                <button class="button" type="submit">Enviar</button>
+            </fieldset>
+            <fieldset>
+                <legend>Password (Pattern)</legend>
+                <input class="bonito" type="password" pattern="[0-9a-fA-F]{4,10}" title="Coloque HEX de 4 a 8 caracteres!" placeholder="Coloque sua senha..." required>
+                <button class="button" type="submit">Enviar</button>
+            </fieldset>
+            <fieldset>
+                <legend>Color</legend>
+                <input type="color">
+            </fieldset>
+            <fieldset>
+                <legend>Checkbox</legend>
+                <label for="subscribe">Aceitar missão</label>
+                <input type="checkbox" name="subscribe" id="subscribe" checked>
+                <!-- **** Usando mesmo name e passando id diferente, associa a multiplos valores **** -->
+            </fieldset>
+            <fieldset>
+                <legend>É ratão ou não é?</legend>
+                    <label for="yes">RATÃO!!!</label>
+                    <input type="radio" name="ratao" id="yes" value="yes">
+                    <label for="no">Nossa, não</label>
+                    <input type="radio" name="ratao" id="no" value="no">
+            </fieldset>
+        </form>
+    </div> 
+</body>
+</html>

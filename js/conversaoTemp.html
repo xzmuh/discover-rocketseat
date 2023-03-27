@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/indexjs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>JS</title>
+</head>
+<body>
+    <script src="conversaoTemp.js"></script>
+    <div class="container">
+        <h1>Conversão de temperaturas</h1>
+        <div class="fontWhite">
+            <input type="radio" name="converter" id="Ctof" style="color: white;"/> Celsius para Fahrenheit <br>
+            <input type="radio" name="converter" id="Ftoc"/> Fahrenheit para Celsius <br><br>
+            <label>Converter valor: </label><input type="number" id="num" min="0"/> <br><br>
+            <button onclick="converterTemp()">Calcular</button><br><br>
+            <label>Resposta: </label><div id="resposta"></div>
+        </div>
+        <br>    
+            <a href="indexjs.html">
+                Voltar
+            </a>
+    </div>
+</body>
+</html>

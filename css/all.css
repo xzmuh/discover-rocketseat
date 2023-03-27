@@ -1,0 +1,224 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal {
+  background-image: url("../../img/esports.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  background-color: #4f4f4f;
+}
+
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 35px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background: #1B1A40;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color: #E1E1E6;
+font-family: arial;
+font-size: 16px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#413D99;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+/* -- CSS Positions-- 
+
+# # Box Model # #
+
+- Tamanho  ( largura x altura )     width | height   
+- Conteúdo                          content
+- Bordas                            border
+- Preenchimento Interno             padding
+- Espaço por fora                   margin
+
+# # Displays: block | inline # #
+
+**block**
+- Ocupado toda linha empurrando os elementos
+- Segue o width e height
+- padding, margin, border funcionam
+
+**inline**
+- Elementos ao lado do outro
+- width e height não funcionam
+- somente elemntos horizontais 
+
+# # margin # #
+
+margin: 12px 16px 10px 4px; top | right | bottom | left
+margin: 12px 16px 0; top | right and left | bottom
+margin: 8px 16px; top and bottom | right and left
+margin: 8; all
+
+# # padding # #
+
+padding: 12px 16px 10px 4px; top | right | bottom | left
+padding: 12px 16px 0; top | right and left | bottom
+padding: 8px 16px; top and bottom | right and left
+padding: 8; all
+
+**borda por fora: outline** 
+*/
+.support {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  padding: 15px;
+  display: flex;
+  background-color: #1B1A40;
+}
+
+.support:hover {
+  background-color:#413D99;
+  transition-duration: 0.4s;
+}
+
+#canto {
+  position:absolute;
+  display:table;
+  border-collapse:collapse;
+  border-spacing:0;
+  color: #E1E1E6;
+  font-family: arial;
+  font-size: 58px;
+  text-decoration:none;
+  -webkit-transform:translateZ(0) scale(1,1);
+  -webkit-transition:all .1s linear;
+  transition:all .1s linear;
+}
+
+.block {
+  width: 80px;
+  height: 40px;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #7470d7
+}
+
+.inline {
+  margin: 10px;
+  border: 2px solid #75d770
+}

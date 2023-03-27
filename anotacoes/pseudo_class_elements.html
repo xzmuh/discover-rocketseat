@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Conceitos</title>
+</head>
+<body>
+  :first-child
+É quando queremos selecionar o primeiro filho de um grupo de elementos.
+
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+<br>
+<strong>CSS:</strong>
+
+ul li:first-child {
+  font-weight: bold;
+}
+
+<br><br>
+
+:nth-of-type()
+Pega o elemento por tipo e posição
+
+<ul>
+  <h3>Palavras bonitas</h3>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+<br>
+<strong>CSS:</strong>
+
+ul li:nth-of-type(1) {
+  font-weight: bold;
+}
+
+<br><br>
+
+:nth-child()
+É quando queremos selecionar o primeiro filho de um grupo de elementos.
+
+<ul>
+	<h3>Palavras bonitas</h3>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+<br>
+<strong>CSS:</strong>
+
+ul li:nth-child(2) {
+  font-weight: bold;
+}
+
+<br><br>
+
+<h3>:nth-child(odd) e :nth-child(even)<br></h3>
+<strong>even</strong> - números pares
+<strong>odd</strong> - números ímpares
+
+
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+<strong>CSS:</strong>
+<br>
+ul li:nth-child(odd) {
+  color: gray;
+}
+
+<hr>
+<br>
+Algumns estilos só são aplicados quando o usuário faz alguma ação na página.
+<br>
+:hover
+<br>
+a:hover {
+  color: red;
+}
+<br>
+Vai mudar a cor do link para vermelho quando o usuário passar o mouse sobre o link
+<br><br>
+:focus é aplicado quando o elemento recebe o foco da ação do usuário que pode ser feita utilizando o teclado ou clicando no elemento com o mouse. É comumente usado em campos de input como uma forma de mostrar qual o input "ativo".
+<br>
+input:focus {
+  border-color: red;
+}
+
+<br><br>
+
+Também podemos usar atributos para selecionar elementos no CSS
+
+Atributos
+:disabled
+<br>
+HTML
+
+<input type="text" disabled>
+<br><br>
+<strong>CSS:</strong>
+<br>
+input:disabled {
+  background-color: green;
+}
+:required
+<br><br>
+HTML
+<br>
+<input type="text" required><br>
+<br>
+<strong>CSS:</strong>
+<br><br>
+input:required {
+  background-color: red;
+}
+<br><br>
+
+::before adiciona um pseudo-elemento antes do elemento selecionado.
+
+HTML
+
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+<br>
+CSS
+
+li::before {
+  content: "> "
+}
+<br>
+::after adiciona um pseudo-elemento depois do elemento selecionado.
+<br>
+li::after{
+  content: ";"
+}
+<br><br>
+Tanto para o ::before quanto para o ::after é preciso adicionar o content, mesmo que ele seja vazio content = "";
+
+<br>
+::first-line pega a primeira linha de um texto.
+<br>
+p::first-line {
+	font-weight: bold;
+}
+</body>
+</html>

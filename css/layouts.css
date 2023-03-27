@@ -1,0 +1,93 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    background-color: blue;
+    position: relative;
+    left: 500px;
+    top: 100px;
+}
+
+.box2 {
+    background-color: chartreuse;
+    position: fixed;
+    left: 65%;
+}
+
+.box3 {
+    background-color: crimson;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* como se estivesse em outra camada, acima */
+}
+
+.box4 {
+    background-color :goldenrod;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+.box5 {
+    background-color :rgb(32, 206, 218);
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    z-index: 1;
+}
+
+.box6 {
+    background-color :rgb(32, 113, 218);
+    position: absolute;
+    top: 46%;
+    left: 61%;
+    z-index: 2;
+}
+
+.box7 {
+    background-color :rgb(54, 32, 218);
+    position: absolute;
+    top: 47%;
+    left: 62%;
+    z-index: 3;
+}
+
+.box8 {
+    background-color :rgb(137, 32, 218);
+    position: absolute;
+    top: 48%;
+    left: 63%;
+    z-index: 4;
+}
+
+/* alinhar no centro */
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.box9 {
+    background-color :rgb(32, 218, 110);
+}
+
+.box10 {
+    background-color :rgb(32, 218, 181);
+}
+
+.box11 {
+    background-color :rgb(32, 159, 218);
+}
+

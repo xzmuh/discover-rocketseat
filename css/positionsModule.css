@@ -1,0 +1,171 @@
+body {
+    position: relative;
+}
+
+table, td, th {
+    border: 2px solid cornflowerblue;
+    border-collapse: collapse;
+}
+
+table {
+    width: 40%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: aliceblue;
+}
+
+.flexContainer {
+    display: flex;
+    border: 2px solid rgb(187, 158, 254);
+    height: 60px;
+    /* imaginar um eixo na vertical e um na horizontal, podendo muda com flex-direction: column */
+}
+
+.itemContainer {
+    background-color: rgb(241, 248, 255);
+    border: 1px solid;
+    flex: 1;
+}
+
+.direcaoItens {
+    border: 2px solid rgb(252, 74, 207);
+    display: flex;
+    flex-direction: column-reverse;
+    height: 120px;
+}
+
+.box{
+    border: 2px dashed rgb(255, 136, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+.box div {
+    border: 1px solid;
+    width: 80px;
+}
+
+.boxJustify {
+    border: 2px dashed crimson;
+    display: flex;
+    justify-content: center;
+}
+
+.boxJustify div {
+    border: 1px solid;
+    width: 40px;
+}
+
+.boxAlign {
+    border: 2px dashed rgb(20, 157, 220);
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+}
+
+.boxAlign div {
+    border: 1px solid;
+    width: 40px;
+}
+
+p, a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.boxBasis {
+    display: flex;
+    border: 2px dashed seagreen;
+    flex-direction: column;
+}
+
+.boxBasis div {
+    border: 1px solid;
+}
+
+.boxBasis div:nth-child(1) {
+    flex-basis: 50px;
+}
+
+.boxGrow {
+    display: flex;
+    border: 2px dashed rgb(120, 211, 59);
+}
+
+.boxGrow div {
+    border: 1px solid;
+}
+
+.boxGrow div:nth-child(2),
+.boxGrow div:nth-child(3),
+.boxGrow div:nth-child(4) {
+    flex-grow: 2;
+}
+
+.boxGrow div:nth-child(1),
+.boxGrow div:nth-child(5) {
+    flex-grow: 1;
+}
+
+.boxShrink {
+    display: flex;
+    border: 2px dashed rgb(211, 59, 92);
+}
+
+.boxShrink div {
+    flex-basis: 70%;
+    border: 1px solid;
+}
+
+.boxShrink div:nth-child(2),
+.boxShrink div:nth-child(3),
+.boxShrink div:nth-child(4) {
+    flex-shrink: 2;
+}
+
+/*--------------------------
+     Posisiton Example
+---------------------------*/
+body {
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    background-color: aqua;
+    flex-grow: 1;
+}
+
+main {
+    background-color: rgb(230, 243, 255);
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(1) {
+    background-color: aquamarine;
+    flex: 2;
+}
+
+main section:nth-child(2) {
+    background-color: cadetblue;
+    flex: 0 260px;
+
+}
+
+main section:nth-child(3) {
+    background-color: darkcyan;
+    flex: 1px;
+
+}

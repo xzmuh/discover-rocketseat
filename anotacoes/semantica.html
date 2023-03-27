@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Conceitos</title>
+</head>
+<body>
+<strong>Cabeçalho header> :</strong>
+O cabeçalho do nosso site, o local onde geralmente fica a logo e o menu.
+<br>
+<strong>Navegação nav> :</strong>
+A navegação do site vai oferecer links para seções do site, o nosso menu. costuma ficar dentro da header, porém pode ficar em outros lugares, como em uma parte lateral, ou na parte de baixo.
+<br>
+<strong>Conteúdo principal main> :</strong>
+A parte do site aonde vai o conteúdo principal, no caso de um blog, teremos vários artigos, vários posts.
+<br>
+<strong>Conteúdo relacionado asid> :</strong> 
+O conteúdo relacionado é algo que seja relacionado levemente ao nosso conteúdo principal, porém não tanto para ficar lá.
+<br>
+<strong>Rodapé footer> :</strong>Onde ficam as informações da parte de baixo da página.
+<br>
+<br>
+Em ambas as situações nós usaremos atributos globais como id e class para entregar um maior significado.
+
+O span é usado quando não se acha um elemento de texto semântico, já o div, quando não se acha um elemento de bloco semântico.
+
+Um exemplo de uso do span é caso queira dar um destaque no texto, mas não queira usar a tag strong, algo parecido com:
+
+<h1>Título <span class="destaque">destacado</span></h1>
+Um exemplo do uso de div semântico:
+
+<div class="cart">
+    <h2>Carrinho de compras</h2>
+</div>
+
+Exemplo básico de como ficaria um HTML semântico:
+
+<blockquote>
+    <body>
+        <header>
+            logomarca
+        
+            <nav>
+                <ul>
+                    <li>item</li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            conteúdo principal
+        
+            h1>Receitas</h1>
+            <p>Essa é uma página de receitas</p>
+        
+            <article>
+                <h2>Receita de torta de maçã</h2>
+                <p>Essa é uma receita de torta de maçã</p>
+            </article>
+        
+            <article>
+                <h2>Receita de torta de limão</h2>
+                <p>Essa é uma receita de torta de maçã</p>
+            </article>
+        
+        </main>
+    
+        <aside>
+            parte lateral
+        </aside>
+    
+        <footer>rodapé</footer>
+    
+    </body>
+</blockquote>
+<body>
