@@ -1,0 +1,115 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+
+.menu-lateral {
+    background-color: #1B1A40;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -250px;
+    transition: 0.5s;
+}
+
+.menu-lateral ul{
+    list-style: none;
+}
+
+.menu-lateral ul li a{
+    color: #E1E1E6;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 45px;
+    display: block;
+}
+.menu-lateral ul li{
+    line-height: 40px;
+}
+
+ .menu-lateral ul li a:hover{
+    background-color:#413D99;
+    transition: 0.3s;
+ }
+
+ .menu-lateral ul ul li a{
+    font-size: 14px;
+    font-weight: 200px;
+    padding-left: 60px;
+    background-color: #282753;
+ }
+
+ .menu-lateral ul ul{
+    display: none;
+ }
+
+ .menu-lateral ul .itens-aulas.mostra{
+    display: block;
+ }
+ 
+ .btnAbre{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: #322e76;
+    color: aliceblue;
+    border-radius: 100px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+ }
+
+ .btnAbre:hover{
+    background-color: #56529e;
+    transition: 0.5s;
+ }
+
+ .btnAbre span{
+    position: relative;
+    font-size: 25px;
+    left: 14px;
+    top: 13px;
+ }
+
+ .menu-lateral.mostra{
+    left: 0px;
+ }
+
+ .menu-lateral.fecha{
+    left: -250px;
+ }
+
+ .btnFecha{
+    position: relative;
+    left: 60px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+ }
+
+ .btnFecha:hover{
+   color: #b9b9b9;
+   transition: 0.2s;
+ }
+
+ .titulo{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+   color: aliceblue;
+   font-size: 20px;
+ }
+
+ .fa-caret-right{
+   transform: rotate(90deg);
+   transition: 0.2s;
+ }
+
+ .fa-caret-right.seta{
+   transition: 0.2s;
+   transform: rotate(0deg);
+ }
