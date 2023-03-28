@@ -51,6 +51,10 @@
     display: block;
  }
  
+ .menu-lateral ul .itens-anotacoes.mostra{
+    display: block;
+ }
+ 
  .btnAbre{
     position: absolute;
     top: 15px;
@@ -109,7 +113,12 @@
    transition: 0.2s;
  }
 
- .fa-caret-right.seta{
+ .fa-caret-right.seta1{
+   transition: 0.2s;
+   transform: rotate(0deg);
+ }
+
+ .fa-caret-right.seta2{
    transition: 0.2s;
    transform: rotate(0deg);
  }
