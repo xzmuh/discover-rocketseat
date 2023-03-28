@@ -1,8 +1,9 @@
 const menuLateral = document.querySelector('.menu-lateral')
-const aulas = document.querySelector('.aulas')
-const anotacoes = document.querySelector('.anotacoes')
-const fechaMenu = document.querySelector('.btnFecha')
-const abreMenu  = document.querySelector('.btnAbre')
+const aulas       = document.querySelector('.aulas')
+const js          = document.querySelector('.js')
+const anotacoes   = document.querySelector('.anotacoes')
+const fechaMenu   = document.querySelector('.btnFecha')
+const abreMenu    = document.querySelector('.btnAbre')
 
 abreMenu.addEventListener('click',() => {
     menuLateral.classList.toggle('mostra')
@@ -26,4 +27,11 @@ anotacoes.addEventListener('click',() => {
     const seta2 = document.querySelector('.fa-caret-right seta2')
     itensAnotacoes.classList.toggle('mostra')
     seta2.classList.toggle('seta2')
+})
+
+js.addEventListener('click',() => {
+    const itensJs = document.querySelector('.itens-js')
+    const seta3 = document.querySelector('.fa-caret-right seta3')
+    itensJs.classList.toggle('mostra')
+    seta3.classList.toggle('seta3')
 })
