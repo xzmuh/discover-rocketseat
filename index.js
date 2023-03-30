@@ -24,14 +24,14 @@ aulas.addEventListener('click',() => {
 
 anotacoes.addEventListener('click',() => {
     const itensAnotacoes = document.querySelector('.itens-anotacoes')
-    const seta2 = document.querySelector('.fa-caret-right seta2')
+    const seta2 = document.querySelector('.fa-caret-right')
     itensAnotacoes.classList.toggle('mostra')
     seta2.classList.toggle('seta2')
 })
 
 js.addEventListener('click',() => {
     const itensJs = document.querySelector('.itens-js')
-    const seta3 = document.querySelector('.fa-caret-right seta3')
+    const seta3 = document.querySelector('.fa-caret-right')
     itensJs.classList.toggle('mostra')
     seta3.classList.toggle('seta3')
 })
